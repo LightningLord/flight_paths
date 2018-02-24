@@ -12,7 +12,7 @@ example: If a traveler departed from OAK to PDX, then PDX to HNL, then HNL to OG
 the return value of this request would be `["OAK", "OGG"]`
 
 note- the connecting flights can be out of order, but the starting point and ending point of each connection MUST be in order.
-For example, the above query could be airports=PDX,HNL,OAK,PDX,HNL,OGG
+For example, the above query could be `airports=PDX,HNL,OAK,PDX,HNL,OGG` but not `airports=OGG,HNL,PDX,OAK,HNL,PDX`
 
 ## POST <base_endpoint>/flight_paths.json
 
