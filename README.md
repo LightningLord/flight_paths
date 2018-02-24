@@ -1,6 +1,6 @@
 # flight_paths
 
-GET <base_endpoint>/flight_paths.json
+## GET <base_endpoint>/flight_paths.json
 
 returns the starting airport and ending airport
 
@@ -14,7 +14,7 @@ the return value of this request would be ['OAK', OGG']
 note- the connecting flights can be out of order, but the starting point and ending point of each connection MUST be in order.
 For example, the above query could be airports=PDX,HNL,OAK,PDX,HNL,OGG
 
-POST <base_endpoint>/flight_paths.json
+## POST <base_endpoint>/flight_paths.json
 
 returns the starting airport and ending airport
 
