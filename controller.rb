@@ -8,6 +8,13 @@ get '/flight_paths.json' do
   endpoints.to_json
 end
 
+post '/flight_paths.json' do
+  airports = JSON.parse(params[:airports])
+  endpoints = get_endpoints(airports)
+  content_type :json
+  endpoints.to_json
+end
+
 def create_connections(airports_csv)
   airports = airports_csv.split(',')
   flights = []
